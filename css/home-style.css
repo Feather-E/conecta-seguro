@@ -119,31 +119,43 @@ body {
 
 .perfil-seguro {
     background-color: #ece7f6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.perfil-seguro h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 22px;
+    color: #6e476e;
+    margin: 12px 0px 0px 12px;
+}
+
+.perfil-seguro p {
+    font-size: 14px;
+    color: #6e476e;
+    font-family: "Arimo", sans-serif;
+    margin: 0px 0px 0px 12px;
 }
 
 .ad-perfil-seguro {
     display: flex;
     justify-content: center;
-    align-items: center ;
-
     width: 100%;
     height: auto;
-    padding: 6%;
-    position: relative;
+    margin-top: 12px;
     border-radius: 20px;
 }
 
 .ad-perfil-seguro img {
     width: 100px;
-    position: absolute;
-    left: 40px;
-    top: 25px;
+    padding-bottom: 12px;
 }
 
 .ad-perfil-seguro-text {
-    width: auto;
-    margin-left: 85px;
+    width: 100%;
     padding: 20px;
+    margin-right: 12px;
     background-color: #fffbfb;
     border-radius: 12px;
 }
@@ -151,10 +163,385 @@ body {
 .ad-perfil-seguro ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-left: 12%;
     font-family: "Arimo", sans-serif;
     font-size: 16px;
     color: #606a7a;
+    text-align:left;
+    }
+.ad-perfil-seguro ul li {
+    margin-bottom   : 7px;
+}
+
+.teste-button {
+    width: 120px;
+    background-color: #5b3e96;
+    color: #fff;
+    font-family: "League Spartan", sans-serif;
+    padding: 3px;
+    margin-left: 96px;
+    align-self: center;
+    text-decoration: none;
+    transition: all 1s ease-out;
+    transform:scale(1.5)
+}
+
+.teste-button:hover {
+    background-color: #9c7fdf;
+    transition: all 0.4s ease
+}
+
+.dica-semana {
+    background-color: #e7f4eb;  
+}
+
+.dica-semana > h1{
+    font-family: "League Spartan", sans-serif;
+    font-size: 22px;
+    color: #276749;
+    margin-top:12px;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.dica-semana p {
+    font-family: "Arimo", sans-serif;
+    color: #2f855a;
+    font-size: 14px;
+}
+
+.dica-semana img {
+    width: 55px;
+    margin-right: 20px;
+}
+.password-design {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.password-design .hidden-key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 40px;
+    border: 0.5px solid #276749;
+    border-radius: 25px;
+    text-align: center;
+    padding-right:12px;
+}
+
+.password-design .hidden-key > h1 {
+    margin:0;
+    padding-top: 12px;
+    font-size: 25px;
+}
+
+.dica-semana span {
+    font-family: "Arimo", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    color:#276749
+}
+
+.historia {
+    background-color: #fff1c7;
+}
+
+.historia > h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 22px;
+    color: #744210;
+    margin-top: 12px;
+}
+
+.historia > p {
+    font-family: "Arimo", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    padding: 5px 100px 0px 10px;
+    font-style:italic;
+    color: #744210;
+}
+
+.historia > b {
     text-align: left;
+    color: #744210;
+    font-weight: 200;
+    margin: 12px 0px 0px 12px;
+}
+
+.historia a {
+    width: 150px;
+    height: 27px;
+    margin-top: 12px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc226;
+    text-decoration: none;
+    color: #744210;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease
+}
+
+.historia > a:hover {
+    background-color: #ee9e4f;
+    transition: all 0.5s ease
+}
+
+/* ===== MEDIA QUERIES - RESPONSIVO ===== */
+
+/* TABLET (768px e abaixo) */
+@media (max-width: 768px) {
+    .ad-box {
+        margin-top: 30px;
+        height: auto;
+        padding: 15px;
     }
 
+    .ad-box h1 {
+        font-size: 36px;
+    }
+
+    .ad-box p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .explore h1 {
+        font-size: 28px;
+    }
+
+    .themes {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .themes .theme-button {
+        width: 280px;
+        height: 120px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    .themes .theme-h1 {
+        font-size: 22px;
+    }
+
+    .theme-p {
+        font-size: 13px;
+    }
+
+    .explore-others {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #explore-div {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .ad-perfil-seguro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ad-perfil-seguro-text {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .ad-perfil-seguro ul {
+        margin-left: 0;
+    }
+
+    .teste-button {
+        width: 120px;
+        margin-left: 0;
+    }
+
+    .historia > p {
+        padding: 5px 10px 0px 10px;
+    }
+}
+
+/* MOBILE (480px e abaixo) */
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .ad-box {
+        margin-top: 20px;
+        height: auto;
+        padding: 12px;
+        width: 95%;
+    }
+
+    .ad-box h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .ad-box p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .explore {
+        margin-top: 25px;
+    }
+
+    .explore h1 {
+        font-size: 22px;
+    }
+
+    .themes {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .themes .theme-button {
+        width: 85%;
+        max-width: 300px;
+        height: auto;
+        min-height: 120px;
+        margin: 0 0 15px 0;
+        padding: 15px 10px;
+    }
+
+    .themes .theme-button img {
+        width: 40px;
+    }
+
+    .themes .theme-h1 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .theme-p {
+        font-size: 12px;
+    }
+
+    .explore-others {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #explore-div {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        margin: 12px auto;
+        padding: 15px;
+    }
+
+    .perfil-seguro h1 {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+    }
+
+    .perfil-seguro p {
+        font-size: 12px;
+        margin: 0 0 12px 0;
+    }
+
+    .ad-perfil-seguro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .ad-perfil-seguro img {
+        width: 70px;
+        padding-bottom: 8px;
+    }
+
+    .ad-perfil-seguro-text {
+        width: 100%;
+        padding: 12px;
+        margin-right: 0;
+    }
+
+    .ad-perfil-seguro ul {
+        font-size: 14px;
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
+    .teste-button {
+        width: 110px;
+        padding: 5px;
+        margin: 12px 0 0 0;
+        font-size: 12px;
+        transform: scale(1);
+    }
+
+    .dica-semana > h1 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .dica-semana p {
+        font-size: 12px;
+    }
+
+    .dica-semana img {
+        width: 45px;
+        margin-right: 10px;
+    }
+
+    .password-design {
+        margin-top: 10px;
+    }
+
+    .password-design .hidden-key {
+        width: 150px;
+        height: 35px;
+        padding-right: 8px;
+    }
+
+    .password-design .hidden-key > h1 {
+        font-size: 18px;
+        padding-top: 8px;
+    }
+
+    .dica-semana span {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .historia > h1 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .historia > p {
+        font-size: 13px;
+        padding: 5px 8px 0px 8px;
+    }
+
+    .historia > b {
+        font-size: 12px;
+        margin: 8px 0px 0px 8px;
+    }
+
+    .historia a {
+        width: 130px;
+        height: 25px;
+        margin-top: 10px;
+        margin-left: 8px;
+        font-size: 12px;
+    }
+}

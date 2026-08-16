@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ece7f6;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.footer-logo span {
+    font-family: "League Spartan", sans-serif;
+}
+
+.footer-links {
+    border: 0.2px solid #ccc;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.footer-links > a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer-links {
+    display: flex;
+
+    border: 1px solid #cfc7dc;
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+.footer-links a {
+    color: #432783;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    padding: 9px 14px;
+
+    border-right: 1px solid #cfc7dc;
+}
+
+.footer-links a:last-child {
+    border-right: none;
+}
+
+.footer-links a:hover {
+    background-color: #e4ddf0;
+}
+
+/* ===== MEDIA QUERIES - FOOTER RESPONSIVO ===== */
+
+/* TABLET (768px e abaixo) */
+@media (max-width: 768px) {
+    footer {
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .footer-logo img {
+        margin-right: 10px;
+    }
+
+    .footer-logo span {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+        padding: 8px 10px;
+        border-right: none;
+        border-bottom: 1px solid #cfc7dc;
+    }
+
+    .footer-links a:last-child {
+        border-bottom: none;
+    }
+}
+
+/* MOBILE (480px e abaixo) */
+@media (max-width: 480px) {
+    footer {
+        margin-top: 30px;
+    }
+
+    .footer-content {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .footer-logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    .footer-logo span {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .footer-links a {
+        font-size: 11px;
+        padding: 10px;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #cfc7dc;
+    }
+
+    .footer-links a:last-child {
+        border-bottom: none;
+    }
+}
