@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-.ad-box {
+.impact-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     background-color: #ece7f6;
 }
 
-.ad-box h1 {
+.impact-box h1 {
     width: auto;
     font-family: 'League Spartan', sans-serif;
     font-size: 50px;
@@ -31,11 +31,11 @@ body {
     color: #2a1b4e
 }
 
-.ad-box h1 b {
+.impact-box h1 b {
     color: #4a2e80
 }
 
-.ad-box p {
+.impact-box p {
     width: 600px;
     font-family: 'Arimo', sans-serif;
     font-size: 22px;
@@ -140,7 +140,7 @@ body {
     margin: 0px 0px 0px 12px;
 }
 
-.ad-perfil-seguro {
+.impact-perfil-seguro {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -149,12 +149,12 @@ body {
     border-radius: 20px;
 }
 
-.ad-perfil-seguro img {
+.impact-perfil-seguro img {
     width: 100px;
     padding-bottom: 12px;
 }
 
-.ad-perfil-seguro-text {
+.impact-perfil-seguro-text {
     width: 100%;
     padding: 20px;
     margin-right: 12px;
@@ -162,7 +162,7 @@ body {
     border-radius: 12px;
 }
 
-.ad-perfil-seguro ul {
+.impact-perfil-seguro ul {
     list-style-type: none;
     padding: 0;
     margin-left: 12%;
@@ -171,7 +171,7 @@ body {
     color: #606a7a;
     text-align:left;
     }
-.ad-perfil-seguro ul li {
+.impact-perfil-seguro ul li {
     margin-bottom   : 7px;
 }
 
@@ -300,17 +300,17 @@ body {
 
 /* TABLET (768px e abaixo) */
 @media (max-width: 768px) {
-    .ad-box {
+    .impact-box {
         margin-top: 30px;
         height: auto;
         padding: 15px;
     }
 
-    .ad-box h1 {
+    .impact-box h1 {
         font-size: 36px;
     }
 
-    .ad-box p {
+    .impact-box p {
         width: 90%;
         font-size: 18px;
     }
@@ -352,17 +352,17 @@ body {
         margin: 15px auto;
     }
 
-    .ad-perfil-seguro {
+    .impact-perfil-seguro {
         flex-direction: column;
         align-items: center;
     }
 
-    .ad-perfil-seguro-text {
+    .impact-perfil-seguro-text {
         width: 90%;
         max-width: 320px;
     }
 
-    .ad-perfil-seguro ul {
+    .impact-perfil-seguro ul {
         margin-left: 0;
     }
 
@@ -382,19 +382,19 @@ body {
         padding: 0 10px;
     }
 
-    .ad-box {
+    .impact-box {
         margin-top: 20px;
         height: auto;
         padding: 12px;
         width: 95%;
     }
 
-    .ad-box h1 {
+    .impact-box h1 {
         font-size: 28px;
         line-height: 1.2;
     }
 
-    .ad-box p {
+    .impact-box p {
         width: 100%;
         font-size: 14px;
     }
@@ -459,24 +459,24 @@ body {
         margin: 0 0 12px 0;
     }
 
-    .ad-perfil-seguro {
+    .impact-perfil-seguro {
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
     }
 
-    .ad-perfil-seguro img {
+    .impact-perfil-seguro img {
         width: 70px;
         padding-bottom: 8px;
     }
 
-    .ad-perfil-seguro-text {
+    .impact-perfil-seguro-text {
         width: 100%;
         padding: 12px;
         margin-right: 0;
     }
 
-    .ad-perfil-seguro ul {
+    .impact-perfil-seguro ul {
         font-size: 14px;
         margin-left: 0;
         padding-left: 15px;
